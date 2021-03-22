@@ -108,24 +108,27 @@ d20Mode.innerHTML = 'NA';
 //adds click event that will change single 6-side die to a number 1-6
 d6.addEventListener('click', function (){
   let number = getRandomNumber(6);
-  sixes = [];
+  let sixes = [];
   sixes.push(number);
   let newSixes = sortByNumber(sixes);
-  d6Mean.innerText = mean(newSixes);
+
+  d6Mean.innerText = mean(sixes);
+  d6Median.innerText = median(newSixes)
+  d6Mode.innerText = mode(newSixes);
+
   if (number === 1) {
     d6.src = 'images/d6/1.png';
   } else if (number === 2) {
-    d6.src = 'images/d6/2.png'
+    d6.src = 'images/d6/2.png';
   } else if (number === 3) {
-    d6.src = 'images/d6/3.png'
+    d6.src = 'images/d6/3.png';
   } else if (number === 4) {
-    d6.src = 'images/d6/4.png'
+    d6.src = 'images/d6/4.png';
   } else if (number === 5) {
-    d6.src = 'images/d6/5.png'
+    d6.src = 'images/d6/5.png';
   } else if (number === 6) {
-    d6.src = 'images/d6/6.png'
+    d6.src = 'images/d6/6.png';
   }
-
 }) 
 
 
@@ -134,8 +137,18 @@ const doubleDie = document.querySelectorAll('#double-d6-buttons')
 //adds click event that will change each 6-side die to a number 1-6 separate of what each die returns
 doubleDie.forEach(item => {
   item.addEventListener('click', event => {
-    let number = getRandomNumber(6);
+  let number = getRandomNumber(6);
   let number2 = getRandomNumber(6);
+
+  let doubleSixes = [];
+  doubleSixes.push(number);
+  doubleSixes.push(number2);
+  let newSixes = sortByNumber(doubleSixes);
+
+  d6TwoMean.innerText = mean(newSixes);
+  d6TwoMedian.innerText = median(newSixes)
+  d6TwoMode.innerText = mode(newSixes);
+
   if (number === 1) {
     d6One.src = 'images/d6/1.png'
   } else if (number === 2) {
@@ -277,8 +290,50 @@ resetter.addEventListener('click', function(){
   //TODO:
   //write handlers to reset averages
 
-  
+  if (d6Mean.innerHTML !== 'NA') {
+    d6Mean.innerHTML = 'NA';
+  }
+  if (d6Median.innerHTML !== 'NA') {
+    d6Median.innerHTML = 'NA';
+  }
 
+  if (d6Mode.innerHTML !== 'NA') {
+    d6Mode.innerHTML = 'NA';
+  }
+
+  if (d6TwoMean.innerHTML !== 'NA') {
+    d6TwoMean.innerHTML = 'NA';
+  }
+  if (d6TwoMedian.innerHTML !== 'NA') {
+    d6TwoMedian.innerHTML = 'NA';
+  }
+
+  if (d6TwoMode.innerHTML !== 'NA') {
+    d6TwoMode.innerHTML = 'NA';
+  }
+
+  if (d12TwoMean.innerHTML !== 'NA') {
+    d12TwoMean.innerHTML = 'NA';
+  }
+  if (d12TwoMedian.innerHTML !== 'NA') {
+    d12TwoMedian.innerHTML = 'NA';
+  }
+
+  if (d12TwoMode.innerHTML !== 'NA') {
+    d12TwoMode.innerHTML = 'NA';
+  }
+
+
+  if (d20TwoMean.innerHTML !== 'NA') {
+    d20TwoMean.innerHTML = 'NA';
+  }
+  if (d20TwoMedian.innerHTML !== 'NA') {
+    d20TwoMedian.innerHTML = 'NA';
+  }
+
+  if (d20TwoMode.innerHTML !== 'NA') {
+    d20TwoMode.innerHTML = 'NA';
+  }
 })
 
 
