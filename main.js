@@ -232,7 +232,7 @@ resetter.addEventListener('click', function(){
  ****************/
 
 //for testing purposes
-const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 3, 12, 2];
+//const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 3, 12, 2];
 
 function mean(array) {
   let total = 0;
@@ -273,5 +273,3 @@ function mode(array) {
   }
   return mostFrequent;
 }
-console.log(sortByNumber(testArray))
-console.log(mode(testArray));
