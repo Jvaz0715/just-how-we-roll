@@ -107,9 +107,79 @@ doubleDie.forEach(item => {
 })
 
 
-d12.addEventListener('click', function(){})
+d12.addEventListener('click', function(){
+  let number = getRandomNumber(12);
+  if (number === 1) {
+    d12.src = 'images/numbers/1.png'
+  } else if (number === 2) {
+    d12.src = 'images/numbers/2.png'
+  } else if (number === 3) {
+    d12.src = 'images/numbers/3.png'
+  } else if (number === 4) {
+    d12.src = 'images/numbers/4.png'
+  } else if (number === 5) {
+    d12.src = 'images/numbers/5.png'
+  } else if (number === 6) {
+    d12.src = 'images/numbers/6.png'
+  } else if (number === 7) {
+    d12.src = 'images/numbers/7.png'
+  } else if (number === 8) {
+    d12.src = 'images/numbers/8.png'
+  } else if (number === 9) {
+    d12.src = 'images/numbers/9.png'
+  } else if (number === 10) {
+    d12.src = 'images/numbers/10.png'
+  } else if (number === 11) {
+    d12.src = 'images/numbers/11.png'
+  } else if (number === 12) {
+    d12.src = 'images/numbers/12.png'
+  }
+})
 
-d20.addEventListener('click', function(){})
+d20.addEventListener('click', function(){
+  let number = getRandomNumber(20);
+  if (number === 1) {
+    d20.src = 'images/numbers/1.png'
+  } else if (number === 2) {
+    d20.src = 'images/numbers/2.png'
+  } else if (number === 3) {
+    d20.src = 'images/numbers/3.png'
+  } else if (number === 4) {
+    d20.src = 'images/numbers/4.png'
+  } else if (number === 5) {
+    d20.src = 'images/numbers/5.png'
+  } else if (number === 6) {
+    d20.src = 'images/numbers/6.png'
+  } else if (number === 7) {
+    d20.src = 'images/numbers/7.png'
+  } else if (number === 8) {
+    d20.src = 'images/numbers/8.png'
+  } else if (number === 9) {
+    d20.src = 'images/numbers/9.png'
+  } else if (number === 10) {
+    d20.src = 'images/numbers/10.png'
+  } else if (number === 11) {
+    d20.src = 'images/numbers/11.png'
+  } else if (number === 12) {
+    d20.src = 'images/numbers/12.png'
+  } else if (number === 13) {
+    d20.src = 'images/numbers/13.png'
+  } else if (number === 14) {
+    d20.src = 'images/numbers/14.png'
+  } else if (number === 15) {
+    d20.src = 'images/numbers/15.png'
+  } else if (number === 16) {
+    d20.src = 'images/numbers/16.png'
+  } else if (number === 17) {
+    d20.src = 'images/numbers/17.png'
+  } else if (number === 18) {
+    d20.src = 'images/numbers/18.png'
+  } else if (number === 19) {
+    d20.src = 'images/numbers/19.png'
+  } else if (number === 20) {
+    d20.src = 'images/numbers/20.png'
+  }
+})
 
 
 /******************
