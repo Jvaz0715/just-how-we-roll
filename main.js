@@ -259,19 +259,19 @@ function mode(array) {
   let newArray = sortByNumber(array);
   let frequency = 1;
   let counter = 0;
-  let item;
+  let mostFrequent;
   for (let i = 0; i <newArray.length; i++) {
     for (let j =i; j <newArray.length; j++) {
       if (newArray[i] === newArray[j])
         counter++;
       if (frequency < counter) {
         frequency = counter;
-        item = newArray[i];
+        mostFrequent = newArray[i];
       }
     }
     counter = 0;
   }
-  return item;
+  return mostFrequent;
 }
 console.log(sortByNumber(testArray))
-console.log(mode(testArray))
+console.log(mode(testArray));
