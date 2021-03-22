@@ -55,7 +55,7 @@ d20.src = "images/start/d20.jpg"
 d6.addEventListener('click', function (){
   let number = getRandomNumber(6);
   if (number === 1) {
-    d6.src = 'images/d6/1.png'
+    d6.src = 'images/d6/1.png';
   } else if (number === 2) {
     d6.src = 'images/d6/2.png'
   } else if (number === 3) {
@@ -68,6 +68,7 @@ d6.addEventListener('click', function (){
     d6.src = 'images/d6/6.png'
   }
 }) 
+
 
 //declares two dies as one variable
 const doubleDie = document.querySelectorAll('#double-d6-buttons')
@@ -181,7 +182,6 @@ d20.addEventListener('click', function(){
   }
 })
 
-
 /******************
  * RESET FUNCTION *
  ******************/
@@ -230,3 +230,22 @@ resetter.addEventListener('click', function(){
 /****************
  * MATH SECTION *
  ****************/
+
+function mean(array) {
+  let total = 0;
+  for (let i = 0; i < array.length; i++) {
+    total += array[i];
+  }
+  return total / array.length;
+}
+
+console.log(mean([1, 2, 3, 4, 5]));
+
+
+function median(array) {
+
+}
+
+function mode(array) {
+
+}
