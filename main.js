@@ -108,6 +108,10 @@ d20Mode.innerHTML = 'NA';
 //adds click event that will change single 6-side die to a number 1-6
 d6.addEventListener('click', function (){
   let number = getRandomNumber(6);
+  sixes = [];
+  sixes.push(number);
+  let newSixes = sortByNumber(sixes);
+  d6Mean.innerText = mean(newSixes);
   if (number === 1) {
     d6.src = 'images/d6/1.png';
   } else if (number === 2) {
@@ -121,6 +125,7 @@ d6.addEventListener('click', function (){
   } else if (number === 6) {
     d6.src = 'images/d6/6.png'
   }
+
 }) 
 
 
@@ -271,6 +276,8 @@ resetter.addEventListener('click', function(){
 
   //TODO:
   //write handlers to reset averages
+
+  
 
 })
 
