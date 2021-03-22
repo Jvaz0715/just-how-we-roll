@@ -232,7 +232,7 @@ resetter.addEventListener('click', function(){
  ****************/
 
 //for testing purposes
-const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 12, 3];
+const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 3, 12, 2];
 
 function mean(array) {
   let total = 0;
@@ -256,5 +256,22 @@ function median(array) {
 
 
 function mode(array) {
-
+  let newArray = sortByNumber(array);
+  let frequency = 1;
+  let counter = 0;
+  let item;
+  for (let i = 0; i <newArray.length; i++) {
+    for (let j =i; j <newArray.length; j++) {
+      if (newArray[i] === newArray[j])
+        counter++;
+      if (frequency < counter) {
+        frequency = counter;
+        item = newArray[i];
+      }
+    }
+    counter = 0;
+  }
+  return item;
 }
+console.log(sortByNumber(testArray))
+console.log(mode(testArray))
