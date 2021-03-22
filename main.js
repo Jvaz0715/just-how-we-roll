@@ -186,6 +186,39 @@ d20.addEventListener('click', function(){
  * RESET FUNCTION *
  ******************/
 
+// declare a variable that grabs button
+const resetter = document.querySelector('button');
+
+// align reset button to center
+
+//add eventlistener for reset button
+
+resetter.addEventListener('click', function(){
+  //handles the die images reset
+  if (d6.src !== "images/start/d6.png") {
+    d6.src = "images/start/d6.png"
+  }
+
+  if (d6One.src !== "images/start/d6.png"){
+    d6One.src = "images/start/d6.png";
+  }
+
+  if (d6Two.src !== "images/start/d6.png"){
+    d6Two.src = "images/start/d6.png";
+  }
+
+  if (d12.src !== "images/start/d12.jpeg"){
+    d12.src = "images/start/d12.jpeg";
+  }
+
+  if (d20.src !== "images/start/d20.jpg"){
+    d20.src = "images/start/d20.jpg";
+  }
+
+  //TODO:
+  //write handlers to reset averages
+
+})
 
 
 /****************************
