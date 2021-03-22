@@ -2,10 +2,10 @@
  * DATA *
  **********/
 
-const sixes = [];
-const doubleSixes = [];
-const twelves = [];
-const twenties = [];
+let sixes = [];
+let doubleSixes = [];
+let twelves = [];
+let twenties = [];
 
 /********************
  * HELPER FUNCTIONS *
@@ -46,6 +46,60 @@ d12.src = "images/start/d12.jpeg"
 
 const d20 = document.querySelector('#d20-roll');
 d20.src = "images/start/d20.jpg"
+
+//creates NA text under each average
+
+//d6 averages
+const d6Mean = document.querySelector('#d6-rolls-mean');
+
+d6Mean.innerHTML = 'NA';
+
+const d6Median = document.querySelector('#d6-rolls-median');
+
+d6Median.innerHTML = 'NA';
+
+const d6Mode = document.querySelector('#d6-rolls-mode');
+
+d6Mode.innerHTML = 'NA';
+
+//d6-double averages
+const d6TwoMean = document.querySelector('#double-d6-rolls-mean');
+
+d6TwoMean.innerHTML = 'NA';
+
+const d6TwoMedian = document.querySelector('#double-d6-rolls-median');
+
+d6TwoMedian.innerHTML = 'NA';
+
+const d6TwoMode = document.querySelector('#double-d6-rolls-mode');
+
+d6TwoMode.innerHTML = 'NA';
+
+//d12 averages
+const d12Mean = document.querySelector('#d12-rolls-mean');
+
+d12Mean.innerHTML = 'NA';
+
+const d12Median = document.querySelector('#d12-rolls-median');
+
+d12Median.innerHTML = 'NA';
+
+const d12Mode = document.querySelector('#d12-rolls-mode');
+
+d12Mode.innerHTML = 'NA';
+
+//d20 averages
+const d20Mean = document.querySelector('#d20-rolls-mean');
+
+d20Mean.innerHTML = 'NA';
+
+const d20Median = document.querySelector('#d20-rolls-median');
+
+d20Median.innerHTML = 'NA';
+
+const d20Mode = document.querySelector('#d20-rolls-mode');
+
+d20Mode.innerHTML = 'NA';
 
 /*******************
  * EVENT LISTENERS *
