@@ -232,7 +232,7 @@ resetter.addEventListener('click', function(){
  ****************/
 
 //for testing purposes
-const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 12];
+const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 12, 3];
 
 function mean(array) {
   let total = 0;
@@ -247,9 +247,12 @@ function median(array) {
   let newArray = sortByNumber(array);
   if (newArray.length % 2 !== 0) {
     return newArray[newArray.length / 2 - .5];
+  } else {
+    firstMiddle = newArray[newArray.length / 2 - 1];
+    secondMiddle = newArray[newArray.length / 2];
+    return (firstMiddle + secondMiddle) / 2;
   }
 }
-console.log(median(testArray));
 
 
 function mode(array) {
