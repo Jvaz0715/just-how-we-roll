@@ -231,6 +231,9 @@ resetter.addEventListener('click', function(){
  * MATH SECTION *
  ****************/
 
+//for testing purposes
+const testArray = [1, 3, 5, 6, 4, 4, 2, 9, 7, 10, 12];
+
 function mean(array) {
   let total = 0;
   for (let i = 0; i < array.length; i++) {
@@ -238,13 +241,16 @@ function mean(array) {
   }
   return total / array.length;
 }
-
-console.log(mean([1, 2, 3, 4, 5]));
-
+//console.log(mean(testArray))
 
 function median(array) {
-
+  let newArray = sortByNumber(array);
+  if (newArray.length % 2 !== 0) {
+    return newArray[newArray.length / 2 - .5];
+  }
 }
+console.log(median(testArray));
+
 
 function mode(array) {
 
