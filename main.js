@@ -51,7 +51,7 @@ d20.src = "images/start/d20.jpg"
  * EVENT LISTENERS *
  *******************/
 
-
+//adds click event that will change single 6-side die to a number 1-6
 d6.addEventListener('click', function (){
   let number = getRandomNumber(6);
   if (number === 1) {
@@ -69,9 +69,43 @@ d6.addEventListener('click', function (){
   }
 }) 
 
+//declares two dies as one variable
+const doubleDie = document.querySelectorAll('#double-d6-buttons')
+//adds click event that will change each 6-side die to a number 1-6 separate of what each die returns
+doubleDie.forEach(item => {
+  item.addEventListener('click', event => {
+    let number = getRandomNumber(6);
+  let number2 = getRandomNumber(6);
+  if (number === 1) {
+    d6One.src = 'images/d6/1.png'
+  } else if (number === 2) {
+    d6One.src = 'images/d6/2.png'
+  } else if (number === 3) {
+    d6One.src = 'images/d6/3.png'
+  } else if (number === 4) {
+    d6One.src = 'images/d6/4.png'
+  } else if (number === 5) {
+    d6One.src = 'images/d6/5.png'
+  } else if (number === 6) {
+    d6One.src = 'images/d6/6.png'
+  }
 
-d6One.addEventListener('click', function(){})
-d6Two.addEventListener('click', function(){})
+  if (number2 === 1) {
+    d6Two.src = 'images/d6/1.png'
+  } else if (number2 === 2) {
+    d6Two.src = 'images/d6/2.png'
+  } else if (number2 === 3) {
+    d6Two.src = 'images/d6/3.png'
+  } else if (number2 === 4) {
+    d6Two.src = 'images/d6/4.png'
+  } else if (number2 === 5) {
+    d6Two.src = 'images/d6/5.png'
+  } else if (number2 === 6) {
+    d6Two.src = 'images/d6/6.png'
+  }
+  })
+})
+
 
 d12.addEventListener('click', function(){})
 
