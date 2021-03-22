@@ -52,7 +52,14 @@ d20.src = "images/start/d20.jpg"
  *******************/
 
 
-//d6.addEventListener('click', function() {})
+d6.addEventListener('click', function() {})
+
+d6One.addEventListener('click', function(){})
+d6Two.addEventListener('click', function(){})
+
+d12.addEventListener('click', function(){})
+
+d20.addEventListener('click', function(){})
 
 
 /******************
