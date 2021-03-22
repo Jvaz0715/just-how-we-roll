@@ -52,7 +52,23 @@ d20.src = "images/start/d20.jpg"
  *******************/
 
 
-d6.addEventListener('click', function() {})
+d6.addEventListener('click', function (){
+  let number = getRandomNumber(6);
+  if (number === 1) {
+    d6.src = 'images/d6/1.png'
+  } else if (number === 2) {
+    d6.src = 'images/d6/2.png'
+  } else if (number === 3) {
+    d6.src = 'images/d6/3.png'
+  } else if (number === 4) {
+    d6.src = 'images/d6/4.png'
+  } else if (number === 5) {
+    d6.src = 'images/d6/5.png'
+  } else if (number === 6) {
+    d6.src = 'images/d6/6.png'
+  }
+}) 
+
 
 d6One.addEventListener('click', function(){})
 d6Two.addEventListener('click', function(){})
