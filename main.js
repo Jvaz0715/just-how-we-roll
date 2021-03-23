@@ -105,6 +105,10 @@ d20Mode.innerHTML = 'NA';
  * EVENT LISTENERS *
  *******************/
 
+
+
+// having trouble with updating array to keep adding each number once clicked
+
 //adds click event that will change single 6-side die to a number 1-6
 d6.addEventListener('click', function (){
   let number = getRandomNumber(6);
